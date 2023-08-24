@@ -1,26 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url('../img/fundo.jpg');
-  background-size: auto 100vh;
   #background-color: cian;
   background-color: #9999aa;
-
-  
-  font-family: Verdana;
+  background-image: url('../img/fundo.jpg');
+  background-size: auto 100vh;  
+  font-family: Courier New;
+  height: 100vh;
 }
 
 .menu {
   font-family: Arial;
   background-color: white;
+  border: 0;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+header {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .menu ul {
   display: flex;
   justify-content: space-around;
-  padding: 0;
 }
 
 .menu li {
   list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
+  #background-color: aquamarine;
 }
 
 a {
